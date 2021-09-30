@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang ="ko">
+
+<head>
+    <meta charset = "utf-8">
+    <title>정보수집</title>
+</head>
+
+<body>
+<form action="#" method = "post">
+<fieldset>
+    <legend>개인정보입력</legend>
+    <p>
+    <label for ="name"> 이름: </label>
+    <input id ="name" type = "text" name ="username">
+    </p>
+    
+    <p>
+     <label for ="birthdate"> 생년월일: </label>
+    <input id="birthdate" type ="date" name="userdate">
+    </p>
+
+    <p>
+        <span>거주지:</span>
+        <select name ="useraddress">
+            <option value ="서울"> 서울 </option>
+            <option value ="경기도"> 경기도 </option>
+            <option value ="충청도"> 충청도 </option>
+            <option value ="경상도"> 경상도 </option>
+            <option value ="전라도"> 전라도 </option>
+            <option value ="강원도"> 강원도 </option>
+            <option value ="제주"> 제주 </option>
+            <option value ="그외"> 그외 </option>
+        </select>
+    </p>
+
+    <p>
+        <span>성별:</span>
+        <label for ="male"> 남성 </label>
+        <input id ="male" type ="radio" value ="남성" name ="sex">
+
+        <label for ="female"> 여성</label>
+        <input id ="female" type ="radio" value ="여성" name ="sex">
+    </p>
+
+    <p>
+    <label for ="email"> 이메일: </label>
+    <input id ="email" type ="email" name ="useremail">
+    </p>
+
+</fieldset>
+<fieldset>
+    <legend>프로필</legend>  
+        <span>자신을 소개할수 있는 인적사항을 적어주세요.</span>
+        <textarea name ="usermessage" 
+        style="width: 80%; height:80%" row ="10" cols ="30">
+        </textarea>
+</fieldset>
+<p>
+    <input type ="submit" value ="전송" />
+</p>
+</form>
+</body>
+</html>
